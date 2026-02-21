@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 16px;
+}
+
+.content {
+  flex: 1; /* Take the remaining space */
+  display: block;
+}
+
+.topbar {
+  width: 100%;
+  background-color: #dadada;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.page-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.page-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  display: block;
+}
+
+.page-links a:hover {
+  color: #4CAF50;
+}
+
+.main {
+  flex: 1; /* Take the rest of the width */
+  padding: 20px;
+  background-color: #fff;
+}
