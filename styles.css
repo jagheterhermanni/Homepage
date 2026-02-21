@@ -20,41 +20,65 @@ header {
 }
 
 .content {
-  flex: 1; /* Take the remaining space */
-  display: block;
+    flex: 1; /* Take the remaining space */
+    display: block;
 }
 
 .topbar {
-  width: 100%;
-  background-color: #dadada;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
+    width: 100%;
+    background-color: #dadada;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .page-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
 }
 
 .page-links a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 16px;
-  display: block;
+    olor: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: block;
 }
 
 .page-links a:hover {
-  color: #4CAF50;
+    color: #4CAF50;
 }
 
 .main {
-  flex: 1; /* Take the rest of the width */
-  padding: 20px;
-  background-color: #fff;
+    flex: 1; /* Take the rest of the width */
+    padding: 20px;
+    background-color: #fff;
 }
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.repo-card {
+    display: block;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.repo-card:hover {
+    border-color: #4CAF50;
+}
+
+.repo-title { font-weight: 700; margin-bottom: 6px; }
+.repo-desc { opacity: 0.85; margin-bottom: 10px; }
+.repo-meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; opacity: 0.75; }

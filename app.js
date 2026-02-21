@@ -1,53 +1,33 @@
 const app = document.getElementById("app");
-const links = document.querySelectorAll("nav a");
-let currentScript = null;
 
-const defaultPage = "about";
-
-//allow only these pages
-const allowedPages = new Set(["about", "projects", "cv"]);
-
-function getPageFromHash() {
-  const page = (window.location.hash || `#${defaultPage}`).slice(1);
-  return allowedPages.has(page) ? page : defaultPage;
-}
+const routes = {
+    about: "pages/about.md",
+    projects: "pages/projects.md",
+    cv: "pages/cv.md"
+};
 
 async function loadPage(page) {
-  try {
-    const response = await fetch(`pages/${page}.md`, { cache: "no-cache" });
-    if (!response.ok) throw new Error("Page not found");
+    try {
+        const res = await fetch(routes[page]);
+        if (!res.ok) throw new Error();
 
-    const markdown = await response.text();
+        const md = await res.text();
+        app.innerHTML = marked.parse(md);
 
-    // Convert Markdown to HTML (requires marked)
-    app.innerHTML = window.marked ? marked.parse(markdown) : `<pre>${markdown}</pre>`;
-
-    // Remove old page script
-    if (currentScript) {
-      currentScript.remove();
-      currentScript = null;
+    //connects to github.js
+        if (document.querySelector("#repo-list") && typeof renderRepos === "function") {
+        renderRepos();
     }
 
-  } catch (error) {
-    app.innerHTML = "<h2>404</h2><p>Page not found</p>";
-  }
+    } catch {
+        app.innerHTML = "<h2>404</h2>";
+    }
 }
 
-// SPA nav: set hash only; hashchange will load the page
-links.forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    const page = link.getAttribute("href").replace("#", "");
+function router() {
+    const page = (location.hash || "#about").slice(1);
+    loadPage(routes[page] ? page : "about");
+}
 
-    // This triggers the hashchange event and loads the page
-    window.location.hash = page;
-  });
-});
-
-// Handle back/forward and direct URL loads
-window.addEventListener("hashchange", () => {
-  loadPage(getPageFromHash());
-});
-
-// Initial load
-loadPage(getPageFromHash());
+window.addEventListener("hashchange", router);
+router();
