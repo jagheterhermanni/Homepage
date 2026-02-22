@@ -7,27 +7,41 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>Portfolio website</h1>
-    </header>  
-
-    <div class="content">
       
-      <nav class="topbar">
-        <ul class="page-links">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#cv">CV</a></li>
-        </ul>
-      </nav>
+    <nav class="topbar">
 
-      <main class="main" id="app">
-        <!-- The content loads from /pages and displays here-->
-      </main>
+      <a href="#about" class="logo">
+        <!--HAUTANEN-->
+        <img src="icons/logo.png" alt="Logo">
+      </a>
+
+      <ul class="page-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+
+      <div class="socials">
+        <a href="https://github.com/jagheterhermanni" target="_blank">
+          <img src="icons/github.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/ville-hautanen/" target="_blank">
+          <img src="icons/linkedin.svg" alt="LinkedIn">
+        </a>
+      </div>
+    </nav>
+
+    <main class="main" id="app">
+      <!-- The content loads from /pages and displays here-->
+    </main>
     
-      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-      <script src="app.js"></script>
-      <script src="github.js"></script>
-    </div>
+    <footer class="footer">
+      <p>© 2026 Ville Hautanen</p>
+      <p>Icons by <a href="https://icons8.com/" target="_blank">Icons8</a> </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="github.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

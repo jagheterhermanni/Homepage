@@ -5,58 +5,94 @@
 }
 
 body {
-    font-family: 'Gill Sans', sans-serif;
-    height: 100vh;
+    font-family: 'Lucida-bright', serif;
+    font-size: 16px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.5rem;
     text-align: left;
-    font-size: 16px;
-}
-
-.content {
-    flex: 1; /* Take the remaining space */
-    display: block;
 }
 
 .topbar {
     width: 100%;
-    background-color: #dadada;
+    background-color: #4CAF50;
     font-size: 16px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 2px 20px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials img {
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.socials img:hover {
+    transform: translateX(-1px);
+    opacity: 0.7;
+}
+
+/*.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}*/
+
+.logo img {
+    height: 36px;
+    display: block;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.logo img:hover {
+    transform: translateY(-1px);
+    opacity: 0.8;
 }
 
 .page-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    
 }
 
 .page-links a {
-    olor: white;
+    color: white;
     text-decoration: none;
     padding: 10px 16px;
     display: block;
+    transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
 .page-links a:hover {
-    color: #4CAF50;
+    color: #000000;
+    transform: translateY(-1px);
+    opacity: 0.8;
 }
 
 .main {
-    flex: 1; /* Take the rest of the width */
-    padding: 20px;
+    flex: 1;
+    padding: 20px 150px;
     background-color: #fff;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: black;
+    padding: 14px 20px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    gap: 40px;
 }
 
 .repo-grid {
@@ -69,7 +105,7 @@ header {
 .repo-card {
     display: block;
     padding: 14px;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 12px;
     text-decoration: none;
     color: inherit;
@@ -82,3 +118,10 @@ header {
 .repo-title { font-weight: 700; margin-bottom: 6px; }
 .repo-desc { opacity: 0.85; margin-bottom: 10px; }
 .repo-meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; opacity: 0.75; }
+
+.cv-frame {
+    width: 90%;
+    height: 75vh;
+    border:2px solid #4CAF50;
+    border-radius: 12px;
+}

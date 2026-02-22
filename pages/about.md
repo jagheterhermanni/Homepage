@@ -1,7 +1,3 @@
 # About Me
 
-Hi, I'm a guy playing a guy disguised as another guy.
-
-- jau
-- jou
-- jiu
+I am Ville, an ICT Engineer student from Finland.
