@@ -1,7 +1,5 @@
 # CV - Ville Hautanen
 
-<iframe 
-  src="documents/ville_hautanen_cv_en.pdf" 
-  class="cv-frame"
-  title="CV PDF">
-</iframe>
+<a href="documents/ville_hautanen_cv_en.pdf" target="_blank" class="download-btn">
+    Open CV
+</a>
