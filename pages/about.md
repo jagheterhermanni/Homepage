@@ -1,6 +1,7 @@
 <div class="about-profile">
-  <img src="pictures/profile-pic.png" alt="Profile picture" class="profile-pic">
+  <img src="pictures/profilepicture.png" alt="Profile picture" class="profile-pic">
   <p class="about-text">
-  I am Ville, an ICT Engineer student from Finland.
-  </p>
+  I am Ville, Engineer student and software developer.</p>
 </div>
+
+I'm studying Information and communications tenchnologies
