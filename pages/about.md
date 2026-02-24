@@ -4,5 +4,21 @@
   I am Ville, Engineer student and software developer.</p>
 </div>
 
+<div class="open-popup">
+  <img src="icons/resume.png" alt="Resume">
+  <a class="resume-text">Resume</a>
+</div>
+
 I'm studying Information and communications tenchnologies in Kajaani University of Applied Sciences, Finland.  
 My studies focus on Embedded systems, but I also enjoy web-development and traditional software development as well.  
+
+
+
+<!--
+<div class="resume-embedded">
+  <a href="documents/ville_hautanen_cv_en.pdf" target="_blank">
+    <img src="pictures/resume-pic.jpg" alt="Resume picture" class="resume-pic">
+    <p>Open Resume</p> 
+  </a>
+</div>
+-->

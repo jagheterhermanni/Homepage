@@ -18,29 +18,42 @@
         <ul class="page-links">
           <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#cv">CV</a></li>
         </ul>
 
         <div class="socials">
+          <a href="documents/ville_hautanen_cv_en.pdf" target="_blank">
+            <img src="icons/resume.png" alt="Resume">
+          </a>
           <a href="https://github.com/jagheterhermanni" target="_blank">
             <img src="icons/github.svg" alt="GitHub">
           </a>
           <a href="https://www.linkedin.com/in/ville-hautanen/" target="_blank">
             <img src="icons/linkedin.svg" alt="LinkedIn">
           </a>
+          <a href="#" id="email-link">
+            <img src="icons/email.png" alt="Email">
+          </a>
         </div>
       </div>
     </nav>
 
     <main class="main">
+      <!-- The content loads from /pages and displays here-->
       <div class="inner" id="app"></div>
-        <!-- The content loads from /pages and displays here-->
+      <!-- For the Resume popup page-->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="modal-close" class="close">&times;</span>
+          <div id="modal-body"></div>
+        </div>
+      </div>
     </main>
     
     <footer class="footer">
       <div class="inner">
         <p>© 2026 Ville Hautanen</p>
-        <p>Icons by <a href="https://icons8.com/" target="_blank">Icons8</a> </p>
+        <p>Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+        <p>Background Image by <a href="https://unsplash.com/@heathergreengreen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Heather Green</a> on <a href="https://unsplash.com/photos/an-airplane-flying-in-the-sky-with-a-blue-background-Lz3lAvRD5Mc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
       </div>
     </footer>
 
