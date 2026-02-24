@@ -7,6 +7,7 @@
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 body {
@@ -16,21 +17,35 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
+    background-image: url("pictures/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
 }
 
 .topbar {
     width: 100%;
-    background-color: #4CAF50;
-    font-size: 16px;
+    background-color: rgba(76, 175, 80, 0.7);
+}
+
+.topbar .inner {
     display: flex;
     align-items: center;
-    padding: 2px 20px;
+    padding: 2px 0;
+    gap: 10px;
 }
 
 .socials {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 0 15px 0 0px;
 }
 
 .socials img {
@@ -51,8 +66,8 @@ body {
 }*/
 
 .logo img {
+    margin: 0 10px 0 15px;
     height: 36px;
-    display: block;
     transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
@@ -71,7 +86,7 @@ body {
 }
 
 .page-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px 16px;
     display: block;
@@ -79,25 +94,33 @@ body {
 }
 
 .page-links a:hover {
-    color: #000000;
+    color: white;
     transform: translateY(-1px);
     opacity: 0.8;
 }
 
 .main {
     flex: 1;
-    padding: 20px 150px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main .inner {
+    max-width: 750px;
+    padding: 20px 40px;
 }
 
 .footer {
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.7);
     color: black;
-    padding: 14px 20px;
     font-size: 14px;
     text-align: center;
+}
+
+.footer .inner {
     display: flex;
+    justify-content: center;
     gap: 40px;
+    padding: 14px 20px;
 }
 
 .repo-grid {
@@ -110,26 +133,19 @@ body {
 .repo-card {
     display: block;
     padding: 14px;
-    border: 3px solid #ddd;
+    border: 3px solid rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     text-decoration: none;
     color: inherit;
 }
 
 .repo-card:hover {
-    border-color: #4CAF50;
+    border-color: rgb(76, 175, 80);
 }
 
 .repo-title { font-weight: 700; margin-bottom: 6px; }
 .repo-desc { opacity: 0.85; margin-bottom: 10px; }
 .repo-meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; opacity: 0.75; }
-
-.cv-frame {
-    width: 90%;
-    height: 75vh;
-    border:2px solid #4CAF50;
-    border-radius: 12px;
-}
 
 /*About page*/
 .about-profile {
