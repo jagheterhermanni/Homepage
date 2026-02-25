@@ -189,46 +189,21 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/*Resume popup page*/
-    .modal {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.6);
-        backdrop-filter: blur(4px);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-    .modal-content {
-        background: white;
-        padding: 30px;
-        border-radius: 8px;
-        max-width: 600px;
-        width: 90%;
-    }
-    .close {
-        cursor: pointer;
-        font-size: 24px;
-        float: right;
-    }
-
-.open-popup {display: flex;}
-.resume-text {padding: 5px 0; font-weight: bold;}
-
-/*.resume-embedded {
-    display: flex;
-    flex-direction: column;
+.resume-emb {
+    display: inline-flex;
     align-items: center;
-    margin: 20px 0;
-    text-align: center;
-    p {
-        padding: 2px 0;
-        font-weight: bold;
-    }
+    gap: 10px;              /* space between icon and text */
+    text-decoration: none;  /* remove underline */
+    color: black;
+    font-weight: bold;
 }
-.resume-pic {
-    max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-}*/
+
+.resume-icon {
+    width: 28px;            /* control icon size */
+    height: auto;
+}
+
+.resume-emb:hover {
+    opacity: 0.8;
+    transform: translateX(-1px);
+}

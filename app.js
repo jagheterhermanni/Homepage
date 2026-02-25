@@ -32,36 +32,14 @@ function router() {
 window.addEventListener("hashchange", router);
 router();
 
-const modal = document.getElementById("modal");
-const modalBody = document.getElementById("modal-body");
-const modalClose = document.getElementById("modal-close");
-
-function openModal(content) {
-    modalBody.innerHTML = content;
-    modal.style.display = "flex";
-}
-
-function closeModal() {
-    modal.style.display = "none";
-}
-
-modalClose.addEventListener("click", closeModal);
-
-//Close when clicking outside box
-modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
-});
-
 app.addEventListener("click", function (e) {
-    if (e.target.matches(".open-popup")) {
+    const button = e.target.closest(".open-popup");
+    if (!button) return;
         e.preventDefault();
 
-        openModal(`
-            <h2>Popup Title</h2>
-            <p>This is loaded dynamically inside the modal.</p>
-        `);
+        openModal('<iframe src="pages/resume.html" class="resume-frame"></iframe>', "resume");
     }
-});
+);
 
 const user = "ville.h.hautanen";
 const domain = "gmail.com";
