@@ -7,12 +7,17 @@
   </div>
 </div>
 
-
-
 I'm studying Information and communications tenchnologies Engineering in Kajaani University of Applied Sciences, Finland.  
 My studies focus on Embedded systems, but I also enjoy web-development and traditional software development as well.  
 
+<div class="content-selection">
+  <a class="work" href="#work">Work experience</a>
+  <a class="school" href="#school">School experience</a>
+</div>
 
+<main class="main">
+  <div class="inner" id="app"></div>
+</main>
 
 <!--
 <div class="resume-embedded">
