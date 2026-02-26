@@ -16,13 +16,54 @@ async function loadPage(page) {
         const md = await res.text();
         app.innerHTML = marked.parse(md);
 
-    //connects to github.js
+        attachEmbeddedListeners();
+
+        //connects to github.js
         if (document.querySelector("#repo-list") && typeof renderRepos === "function") {
         renderRepos();
     }
 
     } catch {
         app.innerHTML = "<h2>404</h2>";
+    }
+}
+
+async function loadIntoDiv(page, elementId) {
+    try {
+        const res = await fetch(routes[page]);
+        if (!res.ok) throw new Error();
+
+        const md = await res.text();
+        const container = document.getElementById(elementId);
+
+        if (container) {
+            container.innerHTML = marked.parse(md);
+        }
+
+    } catch {
+        const container = document.getElementById(elementId);
+        if (container) {
+            container.innerHTML = "<h3>Content not found</h3>";
+        }
+    }
+}
+
+function attachEmbeddedListeners() {
+    const workBtn = document.querySelector(".work-btn");
+    const schoolBtn = document.querySelector(".school-btn");
+
+    if (workBtn) {
+        workBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            loadIntoDiv("work", "embedded-content");
+        });
+    }
+
+    if (schoolBtn) {
+        schoolBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            loadIntoDiv("school", "embedded-content");
+        });
     }
 }
 
