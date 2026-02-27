@@ -8,6 +8,10 @@ const REPO_OPTIONS = {
   sort: "updated", // "updated" | "stars" | "name"
   cacheKey: "repos-cache-v1",
   cacheTtlMs: 6 * 60 * 60 * 1000, // 6 hours
+  selectedRepos: [ //Repos that are shown
+    "PythonProjects",
+    "Portfolio"
+  ],
 };
 
 let currentAbort = null;
@@ -49,6 +53,12 @@ function writeCache(repos) {
 }
 
 function sortRepos(repos) {
+  if (Array.isArray(REPO_OPTIONS.selectedRepos) && REPO_OPTIONS.selectedRepos.length > 0) {
+    return REPO_OPTIONS.selectedRepos
+    .map(name => repos.find(r => r.name === name))
+    .filter(Boolean);
+  }
+
   const copy = [...repos];
 
   if (REPO_OPTIONS.sort === "stars") {
@@ -65,6 +75,10 @@ function sortRepos(repos) {
 
 function filterRepos(repos) {
   return repos.filter((r) => {
+    if (Array.isArray(REPO_OPTIONS.selectedRepos) && REPO_OPTIONS.selectedRepos.length > 0) {
+      if (!REPO_OPTIONS.selectedRepos.includes(r.name)) return false;
+    }
+
     if (!REPO_OPTIONS.includeForks && r.fork) return false;
     if (!REPO_OPTIONS.includeArchived && r.archived) return false;
     return true;
