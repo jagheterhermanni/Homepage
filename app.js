@@ -18,6 +18,10 @@ async function loadPage(page) {
 
         attachEmbeddedListeners();
 
+        if (page === "about") {
+            loadIntoDiv("work", "embedded-content");
+        }
+
         //connects to github.js
         if (document.querySelector("#repo-list") && typeof renderRepos === "function") {
         renderRepos();

@@ -15,7 +15,7 @@ My studies focus on Embedded systems, but I also enjoy web-development and tradi
   <a href="#" class="school-btn">School experience</a>
 </div>
 
-<div class="embedded-content" id="embedded-content"></div>
+<div id="embedded-content" class="markdown-body"></div>
 
 <!--
 <div class="resume-embedded">
