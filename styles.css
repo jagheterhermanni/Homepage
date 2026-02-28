@@ -112,13 +112,13 @@ body {
     .content-selection {
         max-width: 700px; /* width you wanted */
         width: 100%;
-        margin: 30px auto; /* centers horizontally */
+        margin: 10px auto; /* centers horizontally */
         display: flex;
         border: 3px solid rgb(76, 175, 79);
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        background-color: rgba(100, 100, 100, 0.2);
+        background-color: rgba(100, 100, 100, 0.3);
     }
 
     .work-btn,
@@ -146,7 +146,7 @@ body {
         }
         .work-btn {
             border-right: none;
-            border-bottom: 3px solid rgba(76, 175, 79, 0.8);
+            border-bottom: 3px solid rgb(76, 175, 79);
         }
     }
 
@@ -159,11 +159,11 @@ body {
         line-height: 1.6;
         border: 3px solid rgb(76, 175, 79);
         border-radius: 8px;
-        padding: 5px 0 30px 20px;
-        background-color: rgba(100, 100, 100, 0.2);
+        padding: 0 0 30px 20px;
+        background-color: rgba(100, 100, 100, 0.3);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     }
-    .markdown-body h4 { padding-top: 20px;}
+    .markdown-body h4 { padding-top: 25px;}
     .markdown-body p { margin-left: 5px;}
     .markdown-body ul { padding: 0px 20px;}
     .markdown-body a { color: rgb(76,175,79);}
