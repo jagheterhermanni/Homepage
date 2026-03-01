@@ -30,8 +30,11 @@ body {
 }
 
 .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    background-color: rgba(76, 175, 80, 0.7);
+    background-color: rgba(76, 175, 80);
 }
 .topbar .inner {
     display: flex;
@@ -114,7 +117,7 @@ body {
         width: 100%;
         margin: 10px auto; /* centers horizontally */
         display: flex;
-        border: 3px solid rgb(76, 175, 79);
+        border: 3px solid rgb(76, 175, 80);
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -131,12 +134,12 @@ body {
         font-weight: bold;
     }
     .work-btn {
-        border-right: 3px solid rgb(76, 175, 79);
+        border-right: 3px solid rgb(76, 175, 80);
     }
 
     .work-btn:hover,
     .school-btn:hover {
-        background-color: rgba(76, 175, 79, 0.4);
+        background-color: rgba(76, 175, 80, 0.4);
         color: white;
     }
 
@@ -146,7 +149,7 @@ body {
         }
         .work-btn {
             border-right: none;
-            border-bottom: 3px solid rgb(76, 175, 79);
+            border-bottom: 3px solid rgb(76, 175, 80);
         }
     }
 
@@ -157,7 +160,7 @@ body {
     .markdown-body {
         font-family: 'Lucida-Console', monospace;
         line-height: 1.6;
-        border: 3px solid rgb(76, 175, 79);
+        border: 3px solid rgb(76, 175, 80);
         border-radius: 8px;
         padding: 0 0 30px 20px;
         background-color: rgba(100, 100, 100, 0.3);
@@ -166,10 +169,10 @@ body {
     .markdown-body h4 { padding-top: 25px;}
     .markdown-body p { margin-left: 5px;}
     .markdown-body ul { padding: 0px 20px;}
-    .markdown-body a { color: rgb(76,175,79);}
+    .markdown-body a { color: rgb(76, 175, 80);}
 
 .footer {
-    background-color: rgba(76, 175, 80, 0.7);
+    background-color: rgb(76, 175, 80);
     font-size: 14px;
     text-align: center;
 }
@@ -179,9 +182,10 @@ body {
 
 .footer .inner {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 14px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
 }
 
 /*Repository cards*/
@@ -201,7 +205,7 @@ body {
     }
     .repo-card:hover {
         border-color: rgb(76, 175, 79);
-        background-color: rgba(76, 175, 79, 0.3);
+        background-color: rgba(76, 175, 80, 0.3);
     }
     .repo-title {
         font-weight: 700;
@@ -246,7 +250,7 @@ body {
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border: 3px solid rgba(76, 175, 79, 0.7);
+    border: 3px solid rgba(76, 175, 80, 0.7);
     border-radius: 50%;
     margin: 10px 0 30px 0;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
