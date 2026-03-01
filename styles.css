@@ -133,9 +133,7 @@ body {
         color: black;
         font-weight: bold;
     }
-    .work-btn {
-        border-right: 3px solid rgb(76, 175, 80);
-    }
+    .work-btn { border-right: 3px solid rgb(76, 175, 80);}
 
     .work-btn:hover,
     .school-btn:hover {
@@ -176,9 +174,7 @@ body {
     font-size: 14px;
     text-align: center;
 }
-.footer a {
-    color: black;
-}
+.footer a { color: black;}
 
 .footer .inner {
     display: flex;
@@ -203,18 +199,9 @@ body {
         text-decoration: none;
         color: inherit;
     }
-    .repo-card:hover {
-        border-color: rgb(76, 175, 79);
-        background-color: rgba(76, 175, 80, 0.3);
-    }
-    .repo-title {
-        font-weight: 700;
-        margin-bottom: 6px;
-    }
-    .repo-desc {
-        opacity: 0.85;
-        margin-bottom: 10px;
-    }
+    .repo-card:hover { border-color: rgb(76, 175, 79); background-color: rgba(76, 175, 80, 0.3);}
+    .repo-title { font-weight: 700; margin-bottom: 6px;}
+    .repo-desc { opacity: 0.85; margin-bottom: 10px;}
     .repo-meta {
         display: flex;
         flex-wrap: wrap;
@@ -222,6 +209,9 @@ body {
         font-size: 12px;
         opacity: 0.75;
     }
+/*Projects page*/
+    .projects h1 { margin-bottom: 20px;}
+    .projects p { margin-bottom: 20px;}
 
 /*About page*/
     .about-profile {

@@ -2,8 +2,7 @@ const app = document.getElementById("app");
 
 const routes = {
     about: "pages/about.md",
-    projects: "pages/projects.md",
-    cv: "pages/cv.md",
+    projects: "pages/projects.html",
     work: "pages/work.md",
     school: "pages/school.md"
 };
