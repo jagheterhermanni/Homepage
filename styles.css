@@ -198,6 +198,7 @@ body {
         border-radius: 12px;
         text-decoration: none;
         color: inherit;
+        margin-bottom: 40px;
     }
     .repo-card:hover { border-color: rgb(76, 175, 79); background-color: rgba(76, 175, 80, 0.3);}
     .repo-title { font-weight: 700; margin-bottom: 6px;}
