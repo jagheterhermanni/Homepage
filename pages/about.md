@@ -7,7 +7,7 @@
   </div>
 </div>
 
-I'm studying Information and communications tenchnologies Engineering in Kajaani University of Applied Sciences, Finland.  
+I'm studying Information and communications technologies Engineering in Kajaani University of Applied Sciences, Finland.  
 My studies focus on Embedded systems, but I also enjoy web-development and traditional software development as well.  
 
 <div class="content-selection">
