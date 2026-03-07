@@ -1,7 +1,7 @@
 const app = document.getElementById("app");
 
 const routes = {
-    about: "pages/about.md",
+    about: "pages/about.html",
     projects: "pages/projects.html",
     work: "pages/work.md",
     school: "pages/school.md"

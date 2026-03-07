@@ -115,7 +115,7 @@ body {
     .content-selection {
         max-width: 700px; /* width you wanted */
         width: 100%;
-        margin: 10px auto; /* centers horizontally */
+        margin: 40px auto 10px; /* centers horizontally */
         display: flex;
         border: 3px solid rgb(76, 175, 80);
         border-radius: 8px;
@@ -163,6 +163,7 @@ body {
         padding: 0 0 30px 20px;
         background-color: rgba(100, 100, 100, 0.3);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
     }
     .markdown-body h4 { padding-top: 25px;}
     .markdown-body p { margin-left: 5px;}
@@ -199,8 +200,13 @@ body {
         text-decoration: none;
         color: inherit;
         margin-bottom: 40px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
-    .repo-card:hover { border-color: rgb(76, 175, 79); background-color: rgba(76, 175, 80, 0.3);}
+    .repo-card:hover {
+        border-color: rgb(76, 175, 80);
+        background-color: rgba(76, 175, 80, 0.3);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    }
     .repo-title { font-weight: 700; margin-bottom: 6px;}
     .repo-desc { opacity: 0.85; margin-bottom: 10px;}
     .repo-meta {
@@ -248,7 +254,7 @@ body {
 }
 
 .resume-emb {
-    margin: 0 auto 0 0px;
+    margin: 0 auto 10px 0px;
     display: inline-flex;
     align-items: center;
     gap: 10px; /* space between icon and text */
@@ -265,3 +271,26 @@ body {
     opacity: 0.8;
     transform: translateY(-1px);
 }
+
+.skills {margin-top: 30px;}
+.skills ul {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    padding: 6px 12px;
+    border: 2px solid rgb(76, 175, 80);
+    border-radius: 6px;
+    background: rgba(100,100,100,0.3);
+}
+.skills li:hover {
+    border-color: rgba(76, 175, 80, 0.3);
+    background-color: rgba(76, 175, 80, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-1px);
+}
+.skills h4 { text-align: center; margin-bottom: 10px;}

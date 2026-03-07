@@ -3,7 +3,7 @@
 _23.08.2025 - **Current**, part-time contract_  
 _12.05. - 22.08.2025, Summerjob_   
 - I work in R&D as part of an Embedded Software team alongside my studies and my job at the moment is developing automated test sequences for MC6 calibrators, using Beamex's internal software.
-- Main languages used are English and Finnish.
+- Main spoken languages are English and Finnish.
 
 #### Game Developer Intern
 **Platonic Partnership, Vaasa**  
