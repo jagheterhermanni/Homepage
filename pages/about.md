@@ -17,11 +17,10 @@ My studies focus on Embedded systems, but I also enjoy web-development and tradi
 
 <div id="embedded-content" class="markdown-body"></div>
 
-<!--
-<div class="resume-embedded">
-  <a href="documents/ville_hautanen_cv_en.pdf" target="_blank">
-    <img src="pictures/resume-pic.jpg" alt="Resume picture" class="resume-pic">
-    <p>Open Resume</p> 
-  </a>
-</div>
--->
+Technologies I have used:  
+- C/C++
+- Git & SVN
+- HTML & CSS
+- Javascript
+- Python
+- C#
