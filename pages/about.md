@@ -17,10 +17,10 @@ My studies focus on Embedded systems, but I also enjoy web-development and tradi
 
 <div id="embedded-content" class="markdown-body"></div>
 
-Technologies I have used:  
+<!--Technologies I have used:  
 - C/C++
 - Git & SVN
 - HTML & CSS
 - Javascript
 - Python
-- C#
+- C# --> 
