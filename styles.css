@@ -36,7 +36,8 @@ body {
     top: 0;
     z-index: 1000;
     width: 100%;
-    background-color: rgba(76, 175, 80);
+    background-color: rgba(53, 126, 55, 0.7);
+    backdrop-filter: blur(10px);
 }
 .topbar .inner {
     display: flex;
@@ -119,7 +120,7 @@ body {
         width: 100%;
         margin: 40px auto 0; /* centers horizontally */
         display: flex;
-        border: 3px solid rgb(76, 175, 80);
+        border: 3px solid rgb(53, 126, 55);
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -139,7 +140,7 @@ body {
         align-items: center;
         gap: 8px;
     }
-    .work-btn { border-right: 3px solid rgb(76, 175, 80);}
+    .work-btn { border-right: 3px solid rgb(53, 126, 55);}
 
     .work-btn img, .school-btn img {
         height: 28px;
@@ -149,7 +150,7 @@ body {
 
     .work-btn:hover,
     .school-btn:hover {
-        background-color: rgba(76, 175, 80, 0.7);
+        background-color: rgba(53, 126, 55, 0.7);
         color: white;
     }
 
@@ -159,7 +160,7 @@ body {
         }
         .work-btn {
             border-right: none;
-            border-bottom: 3px solid rgb(76, 175, 80);
+            border-bottom: 3px solid rgb(53, 126, 55);
         }
     }
 
@@ -170,7 +171,7 @@ body {
     .markdown-body {
         font-family: 'Lucida Console', monospace;
         line-height: 1.6;
-        border: 3px solid rgb(76, 175, 80);
+        border: 3px solid rgb(53, 126, 55);
         border-radius: 8px;
         padding: 0 0 30px 20px;
         background-color: rgba(100, 100, 100, 0.3);
@@ -180,10 +181,10 @@ body {
     .markdown-body h4 { padding-top: 25px;}
     .markdown-body p { margin-left: 5px;}
     .markdown-body ul { padding: 0px 20px;}
-    .markdown-body a { color: rgb(76, 175, 80);}
+    .markdown-body a { color: rgb(53, 126, 55);}
 
 .footer {
-    background-color: rgb(76, 175, 80);
+    background-color: rgb(53, 126, 55);
     font-size: 14px;
     text-align: center;
 }
@@ -217,7 +218,7 @@ body {
         transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
     }
     .repo-card:hover {
-        border-color: rgb(76, 175, 80);
+        border-color: rgb(53, 126, 55);
         background-color: rgba(76, 175, 80, 0.15);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
         transform: translateY(-2px);
@@ -272,11 +273,11 @@ body {
     height: 175px;
     width: 175px;
     object-fit: cover;
-    border: 3px solid rgba(76, 175, 80, 0.7);
+    border: 3px solid rgba(53, 126, 55, 0.7);
     border-radius: 50%;
     margin: 10px 0 30px 0;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    background-color: rgba(76, 175, 80, 0.7);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(53, 126, 55, 0.7);
 }
 
 .resume-emb {
@@ -309,14 +310,14 @@ body {
 }
 .skills li {
     padding: 6px 12px;
-    border: 2px solid rgb(76, 175, 80);
+    border: 2px solid rgb(53, 126, 55);
     border-radius: 6px;
     background: rgba(100,100,100,0.3);
     transition: all 0.15s ease;
 }
 .skills li:hover {
-    border-color: rgb(76, 175, 80);
-    background-color: rgba(76, 175, 80, 0.7);
+    border-color: rgb(53, 126, 55);
+    background-color: rgba(53, 126, 55, 0.5);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
     transform: translateY(-1px);
     color: white;
