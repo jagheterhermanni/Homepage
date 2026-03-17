@@ -61,22 +61,15 @@ body {
     opacity: 0.7;
 }
 
-/*.logo {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    transition: transform 0.15s ease, opacity 0.15s ease;
-}*/
-
 .logo img {
     margin: 0 10px 0 15px;
     height: 36px;
     transition: transform 0.15s ease, opacity 0.15s ease;
+    box-shadow: 0 6px 20px rgba(0.2, 0, 0.2, 0.1);
 }
 .logo img:hover {
     transform: translateY(-1px);
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .page-links {
