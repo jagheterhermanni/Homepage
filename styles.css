@@ -55,11 +55,11 @@ body {
 }
 .socials img {
     transition: transform 0.15s ease, opacity 0.15s ease;
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
 }
-.socials img:hover {
-    transform: translateX(-1px);
-    opacity: 0.7;
-}
+.socials img:hover { transform: translateX(-1px); opacity: 0.7;}
 
 .logo img {
     margin: 0 10px 0 15px;
@@ -67,10 +67,7 @@ body {
     transition: transform 0.15s ease, opacity 0.15s ease;
     box-shadow: 0 6px 20px rgba(0.2, 0, 0.2, 0.1);
 }
-.logo img:hover {
-    transform: translateY(-1px);
-    opacity: 0.7;
-}
+.logo img:hover { transform: translateY(-1px); opacity: 0.7;}
 
 .page-links {
     list-style: none;
@@ -316,3 +313,19 @@ body {
     color: white;
 }
 .skills h4 { text-align: center; margin-bottom: 10px;}
+
+@media (max-width: 600px) {
+    .topbar .inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+        row-gap: 6px;
+    }
+    .logo img { height: 28px; margin: 0 8px;}
+    .socials { gap: 10px; margin: 0;}
+    .socials img { height: 20px; width: 20px; object-fit: contain;}
+    .page-links { order: 3; width: 100%; justify-content: center; gap: 6px; flex-wrap: wrap;}
+    .page-links a { padding: 6px 10px; font-size: 14px;}
+    .main .inner { padding: 15px 16px;}
+    .about-text { font-size: 16px;}
+}
