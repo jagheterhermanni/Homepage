@@ -1,4 +1,4 @@
-# Portfolio-website
+# Homepage
 https://jagheterhermanni.github.io/Homepage/
 
-A Portfolio website, showcasing my projects and professional background.
+My Homepage, showcasing my projects and professional background.
