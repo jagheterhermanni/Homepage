@@ -1,9 +1,9 @@
 #### Software Designer Trainee
 **Beamex Oy Ab - Kajaani**  
-_Aug 2025 - Present, part-time during studies_  
+_Aug 2025 - Aug 2026, part-time during studies_  
 _May - Aug 2025, Summerjob_   
-- I work in R&D as part of the Embedded Software team. My work focuses on developing automated test sequences for MC6 calibrators using Beamex's internal tool.
-- Main spoken languages are English and Finnish.
+- I worked in R&D as part of the Embedded Software team. My work focused on developing automated test sequences for MC6 calibrators using Beamex's internal tool.
+- Main spoken languages were English and Finnish.
 
 #### Game Developer Intern
 **Platonic Partnership - Vaasa**  

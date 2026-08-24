@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth;}
+html { 
+    scroll-behavior: smooth;
+    background-color: rgb(53, 126, 55);
+}
 
 img {
     max-width: 100%;
@@ -14,14 +17,15 @@ img {
 
 body {
     font-size: 16px;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     text-align: left;
     background-image: url("pictures/background5.jpg");
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
-    /*background-color: rgb(255, 255, 255);*/
+    background-color: rgb(53, 126, 55);
 }
 
 .inner {
@@ -216,7 +220,6 @@ body {
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        line-clamp: 2;
     }
     .repo-meta {
         display: flex;

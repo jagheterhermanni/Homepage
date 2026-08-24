@@ -1,16 +1,16 @@
 // github.js
 const GITHUB_USER = "jagheterhermanni";
 
-// Display options (adjust to taste)
+// Display options (adjust to whatever)
 const REPO_OPTIONS = {
   includeForks: true,
   includeArchived: true,
-  sort: "updated", // "updated" | "stars" | "name"
+  sort: "updated", // "updated", "stars", "name"
   cacheKey: "repos-cache-v1",
   cacheTtlMs: 6 * 60 * 60 * 1000, // 6 hours
   selectedRepos: [ //Repos that are shown
     "PythonProjects",
-    "Portfolio"
+    "Homepage"
   ],
 };
 
