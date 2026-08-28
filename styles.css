@@ -268,15 +268,17 @@ body {
     text-decoration: none; /* remove underline */
     color: black;
 }
-
 .resume-icon {
     width: 28px; /* control icon size */
     height: auto;
 }
-
 .resume-emb:hover {
     opacity: 0.8;
     transform: translateY(-1px);
+}
+.documents {
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .skills {margin-top: 30px;}
@@ -329,7 +331,12 @@ body {
         flex-direction: column;
     }
     .work-btn {
-       border-right: none;
-      border-bottom: 3px solid rgb(53, 126, 55);
+        border-right: none;
+        border-bottom: 3px solid rgb(53, 126, 55);
+    }
+    .documents { 
+        margin-bottom: 20px;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
