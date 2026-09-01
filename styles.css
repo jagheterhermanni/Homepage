@@ -138,6 +138,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 8px;
+        transition: background-color 0.15s ease, color 0.15s ease;
     }
     .work-btn { border-right: 3px solid rgb(53, 126, 55);}
 
@@ -148,7 +149,9 @@ body {
     }
 
     .work-btn:hover,
-    .school-btn:hover {
+    .school-btn:hover,
+    .work-btn.active,
+    .school-btn.active {
         background-color: rgba(53, 126, 55, 0.7);
         color: white;
     }
@@ -171,6 +174,21 @@ body {
     .markdown-body p { margin-left: 5px;}
     .markdown-body ul { padding: 0px 20px;}
     .markdown-body a { color: rgb(53, 126, 55);}
+
+    .experience-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .experience-header b {margin: o;}
+    .company-logo {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
 
 .footer {
     background-color: rgb(53, 126, 55);

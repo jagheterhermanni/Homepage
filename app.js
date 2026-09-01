@@ -18,6 +18,7 @@ async function loadPage(page) {
         attachEmbeddedListeners();
 
         if (page === "about") {
+            setActiveButton("work");
             loadIntoDiv("work", "embedded-content");
         }
 
@@ -51,6 +52,17 @@ async function loadIntoDiv(page, elementId) {
     }
 }
 
+function setActiveButton(activeTab) {
+    const workBtn = document.querySelector(".work-btn");
+    const schoolBtn = document.querySelector(".school-btn");
+    if (workBtn) {
+        workBtn.classList.toggle("active", activeTab === "work");
+    }
+    if (schoolBtn) {
+        schoolBtn.classList.toggle("active", activeTab === "school");
+    }
+}
+
 function attachEmbeddedListeners() {
     const workBtn = document.querySelector(".work-btn");
     const schoolBtn = document.querySelector(".school-btn");
@@ -58,6 +70,7 @@ function attachEmbeddedListeners() {
     if (workBtn) {
         workBtn.addEventListener("click", function (e) {
             e.preventDefault();
+            setActiveButton("work");
             loadIntoDiv("work", "embedded-content");
         });
     }
@@ -65,6 +78,7 @@ function attachEmbeddedListeners() {
     if (schoolBtn) {
         schoolBtn.addEventListener("click", function (e) {
             e.preventDefault();
+            setActiveButton("school");
             loadIntoDiv("school", "embedded-content");
         });
     }
