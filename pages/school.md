@@ -1,5 +1,9 @@
 #### Information and communication technology Engineer
-**KAMK - Kajaani**  
+<div class="experience-header">
+    <img src="icons/KAMK.svg" alt="KAMK logo" class="company-logo"> 
+    <b>KAMK - Kajaani</b>
+</div>
+
 _Aug 2024 - Present_  
 _Expected graduation: Jul 2028_  
 - My studies mostly focus on embedded systems / smart systems.
@@ -9,7 +13,11 @@ _Expected graduation: Jul 2028_
     - Git and SVN for version controlling
 
 #### Vocational Qualification in ICT - Software Development
-**VAMIA - Vaasa**  
+<div class="experience-header">
+    <img src="icons/vamia.png" alt="Vamia logo" class="company-logo"> 
+    <b>VAMIA - Vaasa</b>
+</div>
+
 _Aug 2020 - Apr 2023_  
 - I studied HTML and CSS, C# and Visual Basic.
 - I learned Windows management skills, databases and Unity game-engine.
