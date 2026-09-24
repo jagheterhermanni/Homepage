@@ -9,6 +9,7 @@ _Expected graduation: Jul 2028_
 - My studies mostly focus on embedded systems / smart systems.
 - Skills I have learned in my studies so far:
     - Embedded C programming, C++ and Python
+    - Kotlin and XML for mobile development
     - Use and development of Arduino and similar microcontrollers
     - Git and SVN for version controlling
 
