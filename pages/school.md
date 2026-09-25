@@ -1,4 +1,4 @@
-#### Information and communication technology Engineer
+#### Information and Communication Technology Engineer
 <div class="experience-header">
     <img src="icons/KAMK.svg" alt="KAMK logo" class="company-logo"> 
     <b>KAMK - Kajaani</b>
